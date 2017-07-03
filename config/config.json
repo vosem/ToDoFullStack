@@ -1,9 +1,6 @@
 {
-<<<<<<< HEAD
   "port": 40061,
-=======
-  "port": 4061,
->>>>>>> b5691925d4ceff9c308485518ad00f178c803963
+
   "mongoose": {
     "uri": "mongodb://localhost/todo",
     "options": {
