@@ -1,0 +1,143 @@
+body{
+	background-image: url(ToDo_background.png);
+	background-repeat: repeat-y;
+}
+h1{
+    font-family: Helvetica, sans-serif;
+    color: lightseagreen;
+    width: 375px;
+    padding-top: 50px;
+    margin: auto;
+}
+.adding{
+    font-family: Helvetica, sans-serif;
+    color: lightseagreen;
+    border: solid 2px lightseagreen;
+    width: 355px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(235,255,244);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+div.forms{
+    font-family: Helvetica, sans-serif;
+    color: lightseagreen;
+    border: solid 2px lightseagreen;
+    width: 355px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+form#save,
+form#load,
+form#addTask{
+    font-family: Helvetica, sans-serif;
+    width: 355px;
+    padding: 5px;
+    margin: auto;
+}
+
+#saveInputField,
+#loadInputField,
+#inputField{
+    border: solid 1px lightgrey;
+    width: 270px;
+    height: 25px;
+    font-family: Helvetica, sans-serif;
+    color: lightseagreen;
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 5px;
+}
+#save .button,
+#load .button,
+#inputButton{
+    font-size: 17px;
+    font-weight: bold;
+    color: lightseagreen;
+    border: solid 1px lightseagreen;
+    background-color: rgb(235,255,244);
+    height: 35px;
+    width: 60px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+#save .button:active,
+#load .button:active,
+#inputButton:active{
+    color: rgb(235,255,244);
+    border: solid 1px rgb(235,255,244);
+    background-color: lightseagreen;
+    box-shadow: none;
+}
+table{
+    width: 375px;
+    margin: 30px auto 0 auto;
+    border-collapse: collapse;
+    font-family: Helvetica, sans-serif;
+    color: lightseagreen;
+    font-size: 18px;
+    text-align: center;
+}
+thead tr th{
+    font-family: Helvetica, sans-serif;
+    color: lightseagreen;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid 2px lightseagreen;
+    padding-bottom: 10px;
+}
+td{
+    height: 40px;
+}
+thead th:nth-child(2){
+    text-align: left;
+    padding-left: 10px;
+}
+tbody tr td:nth-child(2){
+    text-align: left;
+    padding-left: 10px;
+}
+.up{
+    font-size: 20px;
+    color: lightseagreen;
+    border: solid 1px lightseagreen;
+    background-color: #9effa4;
+    height: 30px;
+    width: 35px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+.up:active{
+    color: lightcyan;
+    border: solid 1px lightcyan;
+    background-color: lightseagreen;
+    box-shadow: none;
+}
+.delete{
+    font-size: 17px;
+    color: lightseagreen;
+    border: solid 1px lightseagreen;
+    background-color: #ffa5bc;
+    height: 30px;
+    width: 35px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+.delete:active{
+    color: lightcyan;
+    border: solid 1px lightcyan;
+    background-color: lightseagreen;
+    box-shadow: none;
+}
+.done{
+    color: grey;
+    text-decoration: line-through;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO DO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
+        <link rel="stylesheet" type="text/css" href="todo.css">
+    </head>
+    <body>
+
+        <h1>To Do List</h1>
+        <section>
+        <!-- <h2 class="adding">Add Task:</h2> -->
+        <div class="forms">
+            <form id="addTask" name="submitting">
+                <input id="inputField" type="text" value="New Task" onfocus="if (this.value == 'New Task') {this.value = '';}" onblur="if (this.value == '') {this.value = 'New Task';}"/>
+                <input id="inputButton" type="button" value="Add"/>
+            </form>
+            <form id="save" action="">
+                <input id="saveInputField" type="text" value="Link to save" onfocus="if (this.value == 'Link to save') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Link to save';}"/>
+                <input class="button" type="submit" value="Save"/>
+            </form>
+            <form id="load" action="">
+                <input id="loadInputField" type="text" name="uniqueLink" value="Link to load" onfocus="if (this.value == 'Link to load') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Link to load';}"/>
+                <input class="button" type="submit" value="Load"/>
+            </form>
+        </div>
+        </section>
+        <section class="items">
+            <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>What to do</th>
+                    <th>&nbsp</th>
+                    <th>&nbsp</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+<!--                <tr>
+                    <td>1</td>
+                    <td>Task</td>
+                    <td><input class="up" type="button" value="&#8593"/></td>
+                    <td><input class="delete" type="button" value="x"/></td>
+                </tr>-->
+            </tbody> 
+            </table>
+        </section>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="todo.js"></script>
+</html>
