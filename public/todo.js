@@ -32,6 +32,9 @@ $(document).ready(function(){
         data.forEach(function(){
             var index = i+1;
             __self.list.append('<tr><td class="task" data-index="'+index+'">'+ index +'</td><td class="task"  data-index="'+index+'">' +data[i].text+ '</td><td><input class="up" type="button" data-index="'+index+'" value="&#8593"/></td><td><input class="delete" type="button" data-index="'+index+'" value="x"/></td></tr>');
+			if(__self.model[index-1].status == 'done'){
+                $('td.task[data-index="'+index+'"]').toggleClass('done');
+            }
             i++;
         });
         __self.updateLocalStorage();
