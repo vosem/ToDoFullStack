@@ -13,11 +13,11 @@
         <!-- <h2 class="adding">Add Task:</h2> -->
         <div class="forms">
             <form id="addTask" name="submitting">
-                <input id="inputField" type="text" value="New Task" onfocus="if (this.value == 'New Task') {this.value = '';}" onblur="if (this.value == '') {this.value = 'New Task';}"/>
-                <input id="inputButton" type="button" value="Add"/>
+                <input id="inputField" type="text" value="New Task" onfocus="if (this.value == 'New Task') {this.value = '';}" onblur="if (this.value == '') {this.value = 'New Task';}" onkeyup="checkParams()"/>
+                <input id="inputButton" type="button" value="Add" disabled/>
             </form>
             <form id="save" action="">
-                <input id="saveInputField" type="text" value="New Link" disabled="disabled"/>
+                <input id="saveInputField" type="text" value="Here will be displayed your link" disabled="disabled"/>
                 <input class="button" type="submit" value="Save"/>
             </form>
             <form id="load" action="">
@@ -49,4 +49,13 @@
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="todo.js"></script>
+    <script>
+    function checkParams() {
+      if($('#inputField').val() != 'New Task' && $('#inputField').val() != '') {
+        $('#inputButton').removeAttr('disabled');
+      } else {
+        $('#inputButton').attr("disabled", "disabled");
+      }
+    }
+</script>
 </html>
