@@ -67,26 +67,19 @@ $(document).ready(function(){
           __self.length++;
           $('#inputField').val("New Task");
           $('#inputButton').attr("disabled", "disabled");
+          $('#inputButton').addClass('deactivated');
         }
 
         $('#inputField').on('keypress', function(e){
-    		e = e || window.event;
-    		if (e.keyCode == 13 && $('#inputField').val() !='') {
-    			insertTask();
+    	  e = e || window.event;
+    	  if (e.keyCode == 13 && $('#inputField').val() !='') {
+    		insertTask();
           }
         }); 
 
-
         $('#inputButton').on('click', function(){
-            var newTask = __self.inputField.val();    // alternative - document.forms["submitting"].elements["inputField"].value
-            var index = __self.length + 1;
-            __self.model.push({text: newTask, status: 'active'});
-            __self.updateLocalStorage();
-            __self.list.append('<tr><td class="task" data-index="'+index+'">'+index+'</td><td class="task" data-index="'+index+'">'+newTask+'</td><td><input class="up" type="button" data-index="'+index+'" value="&#8593"/></td><td><input class="delete" type="button" data-index="'+index+'" value="x"/></td></tr>');
-            __self.length++;
-            $('#inputField').val("New Task");
-            $('#inputButton').attr("disabled", "disabled");
-        });        
+		  insertTask();
+        });
     };
     
     ToDo.prototype.removeTask = function(){
