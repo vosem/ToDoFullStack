@@ -1,2 +1,5 @@
 node_modules/
 Tests.docx
+tests/
+hosts.txt
+.gitignore

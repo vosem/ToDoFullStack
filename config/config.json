@@ -1,5 +1,5 @@
 {
-  "port": 40061,
+  "port": 80,
 
   "mongoose": {
     "uri": "mongodb://localhost/todo",
