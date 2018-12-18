@@ -42,6 +42,7 @@ form#addTask{
 #saveInputField,
 #loadInputField,
 #inputField{
+	-webkit-appearance: none;
     border: solid 1px lightgrey;
     width: 270px;
     height: 25px;
@@ -54,6 +55,7 @@ form#addTask{
 #save .button,
 #load .button,
 #inputButton{
+	-webkit-appearance: none;
     font-size: 17px;
     font-weight: bold;
     color: lightseagreen;
@@ -70,12 +72,14 @@ form#addTask{
 #save .button:active,
 #load .button:active,
 #inputButton:active{
+	-webkit-appearance: none;
     color: rgb(235,255,244);
     border: solid 1px rgb(235,255,244);
     background-color: lightseagreen;
     box-shadow: none;
 }
 #inputButton.deactivated{
+	-webkit-appearance: none;
     color: grey;
     border: solid 1px grey;
     box-shadow: none;
@@ -112,6 +116,8 @@ tbody tr td:nth-child(2){
     word-break: normal;
 }
 .up{
+	padding: 0;
+	-webkit-appearance: none;
     font-size: 20px;
     color: lightseagreen;
     border: solid 1px lightseagreen;
@@ -123,12 +129,15 @@ tbody tr td:nth-child(2){
     box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
 }
 .up:active{
+	-webkit-appearance: none;
     color: lightcyan;
     border: solid 1px lightcyan;
     background-color: lightseagreen;
     box-shadow: none;
 }
 .delete{
+	padding: 0;
+	-webkit-appearance: none;
     font-size: 17px;
     color: lightseagreen;
     border: solid 1px lightseagreen;
@@ -140,6 +149,7 @@ tbody tr td:nth-child(2){
     box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
 }
 .delete:active{
+	-webkit-appearance: none;
     color: lightcyan;
     border: solid 1px lightcyan;
     background-color: lightseagreen;

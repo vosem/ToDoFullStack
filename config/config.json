@@ -2,7 +2,7 @@
   "port": 80,
 
   "mongoose": {
-    "uri": "mongodb://localhost/todo",
+    "uri": "mongodb://localhost:27017/todo",
     "options": {
       "server": {
         "socketOptions": {
